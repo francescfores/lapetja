@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:tailwind": "tailwind build -i src/assets/styles/index.css -o src/assets/styles/tailwind.css",
-    "predeploy": "ng build --configuration=production --base-href /",
+    "predeploy": "ng build --configuration=production --base-href https://francescfores.github.io/lapetja/",
     "deploy": "gh-pages -d dist/lapetja/browser"
   },
   "private": true,
