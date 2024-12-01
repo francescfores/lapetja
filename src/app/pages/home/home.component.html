@@ -1,0 +1,166 @@
+<div class="relative w-full min-h-screen text-textPrimary">
+   <div class="hidden absolute inset-0 bg-cover bg-center" style="background-image: url('https://tailwindcss.com/_next/static/media/hero-dark@90.dba36cdf.jpg');">
+   </div>
+   <div class="absolute back_gradient_aniamtion">
+   </div>
+   <div class="relative z-10 ">
+      <app-sidebar-blog></app-sidebar-blog>
+      <div class="container mx-auto pt-28 flex flex-col justify-center items-center">
+         <section class="sm:gap-16 w-full flex flex-col justify-between items-center sm:flex-row  md:mt-2" >
+            <div class="w-full sm:w-1/2 flex flex-col justify-start sm:items-start whitespace-nowrap">
+               <h1 class="break-all font-medium mt-4 text-2xl md:text-4xl text-center sm:text-start leading-normal " >
+                  Hola soy <br>
+                  <span class="font-bold text-primary">Francesc Fores</span>,  <br>
+                  <span class=""> desarrollador Full Stack</span>
+               </h1>
+               <div class="mt-10 flex justify-center sm:block mb-10" >
+                  <a download="curriculum.pdf" href="./assets/cv/curriculum.pdf" aria-label="Descargar CV">
+                     <app-button3d class="w-[100px]"
+                     [rounded]="'7px'" [title]="''"
+                     [type]="'btn_primary'"
+                     font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
+                     [width]="'190px'" [raise]="5">
+                     <div class="flex gap-3  items-center uppercase">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class=" h-5 w-5 sn:w-6 sm:h-6 duration-100" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="12" cy="12" r="10"></circle>
+                           <polyline points="8 12 12 16 16 12"></polyline>
+                           <line x1="12" y1="8" x2="12" y2="16"></line>
+                        </svg>
+                        <p>Descargar CV</p>
+                        <i class="fas fa-light fa-arrow-right  text-xs"></i>
+                     </div>
+                     </app-button3d>
+                  </a>
+               </div>
+            </div>
+            <div class=" w-full sm:w-1/2 p-10 text-right  sm:mt-0 inline ">
+               <img *ngIf='isDarkEnable' [src]="'./assets/images/develop_dark.svg'"
+               class="dark:development development  float-right" alt="Developer">
+               <img *ngIf='!isDarkEnable' [src]="'./assets/images/develop_light.svg'"
+               class="dark:development development  float-right" alt="Developer">
+            </div>
+         </section>
+         <section id="projects"  class="pt-20 flex flex-col gap-20 flex-wrap justify-center items-center">
+            <h1 class="w-full font-medium  mt-4 text-xl md:text-3xl text-center ">Proyectos destacados</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 ">
+               <button href="" class="w-full col-span-1 " *ngFor="let item of projects" (click)="goToProject(item,item.title)">
+               <div class="border-2 border-slate-500/10 rounded-t-lg " >
+                  <div class="flex-none border-b-2 border-slate-500/10">
+                     <div class="flex items-center h-8 space-x-1.5 px-3">
+                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+                     </div>
+                  </div>
+                  <div class="  flex flex-col text-sm ">
+                     <img 
+                        [src]="item.img"
+                        class="shadow_img rounded-lg  flex  hover:scale-110 hover:rotate-1 overflow-hidden transition-all duration-500" alt="Developer">
+                  </div>
+               </div>
+               <div class="rounded-b-lg  bg-slate-500/10 flex flex-col gap-4 p-4 items-center justify-center">
+                  <p class="text-2xl font-semibold">{{item.title}}</p>
+                  <p class="text-md font-normal ">{{item.category}}</p>
+               </div>
+               </button>
+            </div>
+         </section>
+      </div>
+      <div id="about" class="container mx-auto flex flex-col justify-center items-center gap-10 pt-24">
+         <h1 class="w-full font-medium  text-xl md:text-3xl text-center ">Sobre mí</h1>
+         <div class="grid grid-cols-5  gap-10 justify-center items-center ">
+            <div class="neon border-4 border-bgTern bg-bgTern rounded-full col-span-5 sm:col-span-5 rotate-[10deg] md:col-span-5 relative  mx-auto  w-52 h-52  justify-center items-end flex overflow-hidden">
+               <img class="z-10 -mb-2 -mr-8 shadow-sm  " 
+                  src="../../assets/images/pictur_2.png" alt="user image">
+            </div>
+            <div class="px-4 col-span-5 sm:col-span-5 md:col-span-5 font-general-regular w-full text-center sm:text-center mx-auto text-center">
+               <p class="mb-4  text-xl">Desarrollador Full Stack especializado en la creación de aplicaciones web y móviles.
+               </p>
+               <p class="mb-4  text-xl">
+                  Tengo experiencia en desarrollo frontend y backend, trabajando como freelance y con equipos colaborativos. He trabajado principalmente con PHP (Laravel/Symfony) y TypeScript (Angular/Ionic), desarrollando soluciones escalables y de alto rendimiento. Además, tengo sólida experiencia en la creación de APIs con Symfony y Laravel, siempre con un enfoque en la optimización y el uso de mejores prácticas.
+               <p class="mb-4  text-xl">
+                  Me mantengo actualizado con las últimas tecnologías, lo que me permite aplicar soluciones innovadoras y eficientes en cada proyecto.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="w-full py-10">
+         <p class="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">Tecnologias con las que he trabajado
+         </p>
+      </div>
+      <div class="container mx-auto pt-10" >
+         <div class="" >
+            <div class="grid grid-cols-3 sm:grid-cols-5 mt-10 gap-8 items-center md:gap-10 justify-center ">
+               <img src="../../assets/logos/Angular.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/TypeScript.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/JavaScript.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/HTML5.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/CSS3.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Laravel.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/PHP.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/symfony-svgrepo-com.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/MySQL.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Docker.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Ionic.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Android.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Swift.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/C_sharp.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+               <img src="../../assets/logos/Xamarin.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
+            </div>
+         </div>
+         <section id="contact" class="border-t border-slate-500/10 w-full mt-20 py-20 flex flex-col gap-10 flex-wrap justify-center items-center">
+            <h1 class="w-full font-medium  mt-4 text-xl md:text-3xl text-center ">Contacto</h1>
+            <ul class="flex flex-wrap gap-4 sm:gap-8 mt-4  ">
+               <a href="mailto:ffores93@gmail.com" role="button" >
+               <app-button3d 
+               [rounded]="'7px'" [title]="''"
+               [type]="'btn_disabled'"
+               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
+               [width]="'80px'" [raise]="6">
+               <div class="flex gap-3  items-center uppercase">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                     <path fill="#FFF" d="M4.9,14L25,30.5L45.1,14v-3.7H4.9V14z M4.9,36.4l9.9-11l-9.9-8.9C4.9,16.6,4.9,36.4,4.9,36.4zM45.1,36.7L34.9,25.5L45,16.7L45.1,36.7L45.1,36.7z M25,33.7l-8.2-6.8L4.9,39.6h40.2L33.2,26.8L25,33.7z"></path>
+                  </svg>
+               </div>
+               </app-button3d>
+               </a>
+               <app-button3d 
+               [rounded]="'7px'" [title]="''"
+               [bg_front_color]="'#0284c7'" 
+               [bg_back_color]="'#075985'" 
+               [border_style]="'solid #38bdf8 var(--border)'" 
+               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
+               [width]="'80px'" [raise]="6">
+               <a  role="button" href="https://www.linkedin.com/in/francesc-for%C3%A9s-campos-3494a2147">
+                  <div class="flex gap-3  items-center uppercase">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                        <path fill="#FFF" d="M13.8,41.7H5.4V13.6h8.4C13.8,13.6,13.8,41.7,13.8,41.7z M44.7,41.7h-8.4v-15c0-3.9-1.4-5.9-4.2-5.9c-2.2,0-3.6,1.1-4.3,3.3c0,3.5,0,17.6,0,17.6h-8.4c0,0,0.1-25.3,0-28.1h6.7l0.5,5.6h0.2c1.7-2.8,4.5-4.7,8.3-4.7c2.9,0,5.2,0.8,7,2.8s2.7,4.7,2.7,8.5L44.7,41.7L44.7,41.7z M9.6,2.3C12,2.3,14,4.2,14,6.5s-2,4.2-4.4,4.2S5.2,8.8,5.2,6.5C5.3,4.2,7.2,2.3,9.6,2.3z"></path>
+                     </svg>
+                  </div>
+               </a>
+               </app-button3d>
+               <app-button3d 
+               [rounded]="'7px'" [title]="''"
+               [bg_front_color]="'#1e293b'" 
+               [bg_back_color]="'#111827'" 
+               [border_style]="'solid #475569 var(--border)'" 
+               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
+               [width]="'80px'" [raise]="6">
+               <a role="button" href="https://github.com/francescfores">
+                  <div class="flex gap-3  items-center uppercase">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                        <path fill="#FFF" d="M25,2.5C12.2,2.5,1.9,12.8,1.9,25.6c0,10.2,6.6,18.9,15.8,21.9c1.2,0.2,1.5-0.5,1.5-1.1c0-0.5,0-2.1,0-4c-6.4,1.4-7.8-3-7.8-3c-1-2.7-2.6-3.4-2.6-3.4C6.7,34.6,9,34.6,9,34.6c2.3,0.2,3.5,2.4,3.5,2.4c2.1,3.5,5.4,2.5,6.7,1.9c0.2-1.5,0.8-2.5,1.5-3.1c-5.1-0.6-10.5-2.6-10.5-11.4c0-2.5,0.9-4.6,2.4-6.2c-0.2-0.6-1-2.9,0.2-6.1c0,0,1.9-0.6,6.3,2.4c1.8-0.5,3.8-0.8,5.8-0.8s3.9,0.3,5.8,0.8c4.4-3,6.3-2.4,6.3-2.4c1.3,3.2,0.5,5.5,0.2,6.1c1.5,1.6,2.4,3.7,2.4,6.2c0,8.9-5.4,10.8-10.5,11.4c0.8,0.7,1.6,2.1,1.6,4.3c0,2.9,0,5.6,0,6.4c0,0.6,0.4,1.3,1.5,1.1C41.4,44.5,48,35.9,48,25.7C48.1,12.8,37.8,2.5,25,2.5z"></path>
+                     </svg>
+                  </div>
+               </a>
+               </app-button3d>
+            </ul>
+         </section>
+         <div class="py-2 font-general-regular flex justify-center items-center text-center">
+            <div class="text-xl">© 2024
+               <a href="https://francescfores.github.io/" target="__blank" class="font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500">Francesc Fores</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
