@@ -1,124 +1,800 @@
-<div class="relative w-full min-h-screen text-textPrimary">
-   <div class="hidden absolute inset-0 bg-cover bg-center" style="background-image: url('https://tailwindcss.com/_next/static/media/hero-dark@90.dba36cdf.jpg');">
-   </div>
-   <div class="absolute back_gradient_aniamtion">
-   </div>
-   <div class="relative z-10 ">
-      <app-sidebar-blog></app-sidebar-blog>
-      <div class="container mx-auto pt-28 flex flex-col justify-center items-center">
-         <section class="sm:gap-16 w-full flex flex-col justify-between items-center sm:flex-row  md:mt-2" >
-            <div class="w-full sm:w-1/2 flex flex-col justify-start sm:items-start whitespace-nowrap">
-               <h1 class="break-all font-medium mt-4 text-2xl md:text-4xl text-center sm:text-start leading-normal " >
-                  Hola somos la petja <br>
-                  <span class="font-bold text-primary">Francesc Fores</span>,  <br>
-                  <span class=""> desarrollador Full Stack</span>
-               </h1>
-               <div class="mt-10 flex justify-center sm:block mb-10" >
-                  <a download="curriculum.pdf" href="./assets/cv/curriculum.pdf" aria-label="Descargar CV">
-                     <app-button3d class="w-[100px]"
-                     [rounded]="'7px'" [title]="''"
-                     [type]="'btn_primary'"
-                     font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
-                     [width]="'190px'" [raise]="5">
-                     <div class="flex gap-3  items-center uppercase">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class=" h-5 w-5 sn:w-6 sm:h-6 duration-100" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                           <circle cx="12" cy="12" r="10"></circle>
-                           <polyline points="8 12 12 16 16 12"></polyline>
-                           <line x1="12" y1="8" x2="12" y2="16"></line>
-                        </svg>
-                        <p>Descargar CV</p>
-                        <i class="fas fa-light fa-arrow-right  text-xs"></i>
-                     </div>
-                     </app-button3d>
+<app-sidebar-blog></app-sidebar-blog>
+<div  class="relative w-full min-h-screen text-textPrimary bg-bgPrim">
+<main class="relative bg-bgPrim flex justify-center items-center w-full flex-col z-0 overflow-hidden">
+   <section class="section6 flex flex-col h-[100vh] w-full gap-20 overflow-hidden relative ">
+      <div class="z-10 max-w-screen-2xl mt-auto w-full md:w-1/2 p-4 md:p-20 flex flex-col flex-nowrap gap-6  ">
+         <p class="text-6xl md:text-7xl font-semibold animate-fade-in-up animate-delay-300 animate-duration-600">La Petja Skate Club</p>
+            <p class="animate-fade-in-up animate-delay-400 animate-duration-600" >La Petja Skate Club es más que un club, es una familia. Nacimos con el sueño de crear un espacio donde el skateboarding sea accesible para todos. Promovemos el respeto, la creatividad y el amor por este deporte que nos une.</p>
+            <!-- <a class="w-min p-1 px-4 bg-primary font-semibold rounded  animate-slide-in-bottom animate-delay-500 animate-duration-600">
+               <p>Business</p>
+               </a> -->
+
+          <app-button3d 
+          class="w-[90px] "
+               [rounded]="'4px'" [title]="''"
+               [bg_front_color]="'#ACFF70'" 
+               [font_color]="'#0C0C0C'" 
+               [bg_back_color]="'#3B8F00'" 
+               [border_style]="'solid #7CFF1F var(--border)'" 
+               font_size="12px" [font_body_weight]="'900'"  [height]="'25px'"
+               [width]="'100%'" [raise]="4">
+               <a role="button" href="https://github.com/francescfores">
+                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                    <p>info club</p>
+                  </div>
+               </a>
+               </app-button3d>
+        </div>
+         <div class="framer-1ph24t6 h-[400px] md:h-inherit" data-framer-appear-id="1ph24t6" data-framer-name="Video Desktop" 
+         name="Video Desktop" >
+            <div class="framer-1e85zkz-container">
+               <!--<video loop="true" autoplay="true"
+                style="cursor:auto;width:100%;height:100%;border-radius:0px;
+                display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%">
+                  <source type="video/webm" 
+               src="/assets/images/lapetja/286263780_7651234188282274_4092089343775398007_n.mp4">
+
+            </video>-->
+            <img style="cursor:auto;width:100%;height:100%;border-radius:0px;
+                display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%" src="./assets/images/lapetja/198684836_2097520570426310_3624404012612936900_n.jpg">
+            </div>
+            <div class="ssr-variant hidden-1u310t9">
+               <div class="framer-1e2gub7" data-framer-name="Poster" name="Poster">
+             </div> 
+            </div>
+         </div>
+         <div class="mt-auto w-full brands move flex flex-nowrap gap-20  z-50">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac3a_logo-box-discord.svg" alt="discord logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac3b_logo-box-ncr.svg" alt="ncr logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac41_logo-box-ted.svg" alt="TED logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac3c_logo-box-dropbox.svg" alt="dropbox logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac42_logo-box-orangetheory.svg" alt="orangetheory logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac3f_logo-box-greenhouse.svg" alt="greenhouse logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac46_logo-box-vice.svg" alt="vice logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac44_logo-box-philips.svg" alt="phillips logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0acbf_wf-marquee-bbdo.svg" alt="BBDO logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac3d_logo-box-mural.svg" alt="mural logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac47_logo-box-rakuten.svg" alt="rakuten logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac40_logo-box-nyt.svg" alt="new york times logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0acbe_wf-marquee-ideo.svg" alt="IDEO logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac45_logo-box-upwork.svg" alt="upwrork logo" class="w-32">
+            <img src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/66e079b3ede411dc1aee5aba_Decathlon.svg" loading="lazy" alt="decathlon logo"class="w-32">
+        </div>
+      <div data-framer-name="Glow" name="Glow" class="div1 framer-yz9qzl hidden-1ja8gbp">
+         <!--
+         <div class="div1 framer-lw3v16" data-framer-name="1" name="1"></div>
+         -->
+       
+      </div>
+    </section>
+  
+    <section class="hidden max-w-screen-2xl px-4 py-20 md:px-20  section_animate_video overflow-hidden animate-fade-in-up animate-delay-200 animate-duration-600">
+        <div class=" w-full flex justify-center items-start" style="transform-style: preserve-3d;  perspective: 50vh;">
+            <div class="video-alt_1-gradient"></div>
+            <video class="video1 h-fit overflow-hidden " style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); transform-style: preserve-3d;" autoplay="true" muted="" loop="" title="Webflow Designer" poster="https://cdn.prod.website-files.com/669e85bc7c10a1b210e2fcd6/66abf8b62e53dbfa5fc2e5a0_hero-video-optimized.avif" playsinline="true" data-hero-video="1" ><source type="video/webm" src="https://dhygzobemt712.cloudfront.net/Web/home/2024-hero_experiment-august/hero_video-optimized.webm"></video>
+        </div>
+    </section>
+    
+    <section class="fade-in-up max-w-screen-2xl mt-10 px-4 pt-20 md:px-20  w-full flex  justify-center items-center  gap-8 flex-col text-center">
+      <div class="w-full flex flex-col gap-8 items-center">
+         <p class="text-3xl md:text-7xl font-semibold">¿Listo para rodar? </p>
+        </div>
+        <div class="w-full flex flex-col gap-8 w-1/2 items-center">
+            <p>Únete a La Petja y sé parte de la comunidad que transforma el skate en una forma de vida.</p>
+          
+        </div>
+    </section>
+    <section class="max-w-screen-2xl px-4 py-20 md:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
+        <div class="flex relative w-full justify-center items-start">
+            <div class="opacity-0 md:opacity-100 w-2/6 div1  -mr-20 mt-10   z-20  ">
+               <img class="w-full test border border-textPrimary/70  rounded " src="./assets/images/lapetja/356645973_1000886211032973_4026055882900040344_n.jpg" alt="">
+            </div> 
+            <div class="div2 w-full relative"> 
+               <div data-framer-name="Glow" class="framer-zxpwxw  z-0   relative"></div>
+               <div data-framer-name="Glow" class="glow2  z-0   relative"></div>
+               <img class="  test2 framer-zxpwxw2 border border-textPrimary/70  rounded z-10 relative" src="/assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla.jpg" alt="">
+            </div>
+            <div class="opacity-0 md:opacity-100 w-2/6 div3 -ml-20  mt-10 z-20  ">
+                <img class="w-full test border border-textPrimary/70  rounded " src="/assets/images/lapetja/354578711_993641441757450_3689941272740245820_n.jpg" alt="">
+            </div>
+            <div class="flex w-full absolute text-center z-20 pb-10  md:pb-10 bottom-0 space-x-10 text-md gap-2 lg:gap-20">
+               <p>
+                  <b>Design. </b>Launch in one click. Your site goes live with lightning-fast speed and is already SEO optimized to start ranking on search engines.</p>
+                  <p class="hidden md:block">
+                  <b>Publish. </b>Design on a familiar free-form canvas. Use stacks, grids, breakpoints for responsiveness, and effects to bring your website to life.
+               </p>
+               <p class="hidden md:block">
+                  <b>Scale. </b>Easily grow your site with a built-in CMS, AI-powered localization, and maintenance tools, designed to handle projects of any size.
+               </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="max-w-screen-2xl px-4 py-20 md:px-20 w-full flex relative    flex-col justify-end items-center
+       section3_animation  overflow-x-hidden gap-4">
+       <div class=" absolute mask w-full  h-full flex bg-bgPrim z-10">
+          <!--  <div class="h-[25%] border border-blue-300 w-full"></div>
+       <div class="h-[25%] border border-blue-300 w-full"></div>
+       <div class="h-[25%] border border-blue-300 w-full"></div>
+       <div class="h-[25%] border border-blue-300 w-full"></div> -->
+       </div>
+      <div class="w-full flex flex-col md:flex-row h-full   justify-end">
+        <div class="w-full md:w-6/12  flex flex-col gap-2 z-50   text-center md:text-start justify-center items-center md:items-start  ">
+           <p class="banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+           -webkit-background-clip: text;
+                   background-clip: text;
+           -webkit-text-fill-color: transparent;">Sobre nosotros</p>   
+           <p class="font-semibold text-3xl">La Petja Skate Club</p>
+           <p class="flex" >Es más que un club, es una familia. Nacimos con el sueño de crear un espacio donde el skateboarding sea accesible para todos. Promovemos el respeto, la creatividad y el amor por este deporte que nos une.</p>
+           <div class="flex flex-wrap gap-2 mt-6 justify-center md:justify-start ">
+              <a class=" p-1 rounded border border-textPrimary/80">
+                 <p>Eventos</p>
+                 </a>
+                 <a class=" p-1 rounded border border-textPrimary/80">
+                    <p>Campus</p>
+                    </a>
+                    <a class=" p-1 rounded border border-textPrimary/80">
+                       <p>Extra escolares</p>
+                       </a>
+                       <a class=" p-1 rounded border border-textPrimary/80">
+                          <p>Clases en Escuelas</p>
+                          </a>
+                          
+          </div>
+          </div>
+       <div class="hidden md:flex md:w-6/12  gap-4 md:flex-col mt-auto mask2 ">
+        <div class="ml-24 div1  gap-4  flex h-[132px] md:h-[264px]">
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full  w-[180px] md:w-[400px]" src="./assets/images/lapetja/116869516_1818330931678610_3379788262220538131_n.jpg" alt="Framer template">
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"   src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+       </div>  
+       <div class="div2 gap-4  flex  h-[132px] md:h-[264px]">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/305961087_2478537202324643_3127253823362828421_n.jpg" alt="Framer template">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"   src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template" >
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/8MCGPagnE5ASvd2v5wHOnEp8.png" alt="Framer template" >
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template" >
+        </div>   
+       </div>        
+      </div>
+
+       <div class="w-[140vh] div3 gap-4 flex h-[132px] md:h-[264px] ">
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/358686724_1005681253886802_6691392218711406634_n.jpg" alt="Framer template">
+         
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/198684836_2097520570426310_3624404012612936900_n.jpg" alt="Framer template">
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/208508193_2111451865699847_2477656309644796735_n.jpg" alt="Framer template">
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template">
+        <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+       </div>
+       <div class="w-[140vh] test div4 gap-4 flex  h-[132px] md:h-[264px] ">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" alt="Framer template">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" alt="Framer template">
+          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template"><img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/8MCGPagnE5ASvd2v5wHOnEp8.png" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template" >
+           <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]"  src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template" >
+       </div>
+   </section>
+       <section class="w-full flex justify-center mx-32 px-4 py-20 md:px-20">
+      <div class="text-center px-1 md:px-10   flex flex-col gap-2 z-50 justify-center items-center">
+           <p class="banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+       -webkit-background-clip: text;
+               background-clip: text;
+       -webkit-text-fill-color: transparent;">Actividades</p>   
+       <p class="font-semibold text-3xl">Desde principiantes hasta avanzados</p>
+       <p class="/70" >
+         En La Petja Skate Club ofrecemos una variedad de actividades <br> para todos los niveles y edades. Desde clases en escuelas hasta emocionantes eventos  y campus <br>extraescolares, nos enfocamos en compartir la pasión por el skateboarding mientras promovemos el aprendizaje</p>
+      </div>
+   </section>
+   <section class="max-w-screen-2xl flex flex-wrap flex-col sm:flex-row gap-4 w-full px-4 py-20 md:px-20 group  overflow-visible">
+      <div class="flex flex-col sm:flex-row gap-4 w-full">
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+            border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden">
+            <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                  <p class="text-2xl font-bold mb-4">
+                     Extra escolares
+                  </p>
+                  <p class="font-normal mb-2 opacity-80">
+                     Clases dinámicas para aprender skate después de clase.
+                  </p>
+            </div>
+            <img style="display:block;width:100%;height:100%;border-radius:inherit;object-position:left top;object-fit:cover;image-rendering:auto" class="test video-background " srcset="/assets/images/lapetja/373014475_1039415460513381_868632633789118611_n.jpg" src="/assets/images/lapetja/373014475_1039415460513381_868632633789118611_n.jpg" alt="Framer websites" >
+           <!--<video autoplay autoplay="true" class="test video-background place-content-end" src="/assets/images/lapetja/213651063_340164954481579_5330503336102508511_n.mp4" 
+            loop="" preload="auto" 
+            poster="/assets/images/lapetja/213651063_340164954481579_5330503336102508511_n.mp4" muted="" playsinline=""
+            ></video>-->
+          </div>
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+               border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden " >
+           <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                 <p class="text-2xl font-bold mb-4">
+                    Clases en escuelas
+                 </p>
+                 <p class="font-normal mb-2 opacity-80">
+                    Llevamos el skateboarding directamente a tu colegio.
+                 </p>
+           </div>
+           <img class="test video-background " src="/assets/images/lapetja/326546877_3405674466314551_1106546943189397721_n.jpg" alt="Framer websites" >
+         </div>
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+            border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden " >
+           <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                 <p class="text-2xl font-bold mb-4">
+                    Eventos
+                 </p>
+                 <p class="font-normal mb-2 opacity-80">
+                    Competiciones, exhibiciones y diversión para todos.
+                 </p>
+           </div>
+           <img class="test video-background " src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" alt="Framer websites" >
+         </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 w-full">
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+            border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden " >
+             <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                    <p class="text-2xl font-bold mb-4">
+                       Campus
+                    </p>
+                    <p class="font-normal mb-2 opacity-80">
+                       Intensivos de skate para aprender y disfrutar al máximo.
+                    </p>
+              </div>
+              <img style="display:block;width:100%;height:100%;border-radius:inherit;object-position:left top;object-fit:cover;image-rendering:auto" class="test video-background " srcset="/assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" src="/assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer websites" >
+         </div>
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+            border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden " >
+             <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                    <p class="text-2xl font-bold mb-4">
+                       Clases particulares
+                    </p>
+                    <p class="font-normal mb-2 opacity-80">
+                       Intensivos de skate para aprender y disfrutar al máximo.
+                    </p>
+              </div>
+              <img style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto" class="test video-background " srcset="/assets/images/lapetja/322020001_2348310985333719_8571263132416363811_n.jpg" src="/assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer websites" >
+         </div>
+         <div class="relative flex w-full  rounded text-center rounded flex flex-col 
+            border border-neutral-500/70 h-[50vh] md:h-[450px] w-[450px] overflow-hidden " >
+             <div class="absolute flex flex-col justify-end h-full p-2 md:p-10  z-20 text-start">
+                    <p class="text-2xl font-bold mb-4">
+                       Cumpleaños
+                    </p>
+                    <p class="font-normal mb-2 opacity-80">
+                       Intensivos de skate para aprender y disfrutar al máximo.
+                    </p>
+              </div>
+              <img style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto" class="test video-background " srcset="/assets/images/lapetja/448004317_1219849945803264_3862966259540462880_n.jpg" src="/assets/images/lapetja/448004317_1219849945803264_3862966259540462880_n.jpg" alt="Framer websites" >
+         </div>
+      </div>
+ </section>
+    <section class=" w-full flex h-full justify-center p-4 px-4 py-20 md:px-20 pb-0">
+      <div class="px-1 md:px-10   flex flex-col gap-2 z-50 justify-center items-center">
+           <p class="text-center  banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+       -webkit-background-clip: text;
+               background-clip: text;
+       -webkit-text-fill-color: transparent;">Galería</p>   
+       <p class="text-center  font-semibold text-3xl">Momentos que ruedan</p>
+       <p class="text-center ">Revive los mejores momentos del skate fotos y videos <br>  de nuestras clases, eventos y la energía de nuestra comunidad.</p>
+       <app-button3d 
+          class="w-[100px] mt-5"
+               [rounded]="'4px'" [title]="''"
+               [bg_front_color]="'#ACFF70'" 
+               [font_color]="'#0C0C0C'" 
+               [bg_back_color]="'#3B8F00'" 
+               [border_style]="'solid #7CFF1F var(--border)'" 
+               font_size="12px" [font_body_weight]="'900'"  [height]="'25px'"
+               [width]="'100%'" [raise]="4">
+               <a role="button" href="https://github.com/francescfores">
+                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                    <p>Ver mas</p>
+                  </div>
+               </a>
+               </app-button3d>
+      </div>
+   </section>
+    <section class="animate-fade-in animate-delay-200 animate-duration-600 
+     h-screen overflow-x-hidden overflow-y-hidden section4_animation relative w-full h-[80vh] md:h-[150vh] flex 
+    flex-col justify-center items-center gap-4">
+      <div class="hidden div_back fixed w-full h-full flex-col justify-center items-center absolute -mt-20 text-center ">
+         <p class=" text-6xl md:text-7xl font-semibold z-50">Ver más</p>
+
+      <!-- <div class="h-[25%] border border-blue-300 w-full"></div>
+      <div class="h-[25%] border border-blue-300 w-full"></div>
+      <div class="h-[25%] border border-blue-300 w-full"></div>
+      <div class="h-[25%] border border-blue-300 w-full"></div> -->
+     </div>  
+      <div style="transform-origin: top" class="test div1 
+      space-x-2  w-full overflow-x-hidden overflow-y-hidden" data-framer-name="Sites" name="Sites" >
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Far Left" name="Far Left">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-qihpz0 framer-1tnasrg" data-framer-name="Plaid" name="Plaid" href="https://www.framer.com/gallery/plain-com?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div  data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/YixzQyDZ22ckVE6LpkJxTUuqFm8.png?scale-down-to=2048 955w,https://framerusercontent.com/images/YixzQyDZ22ckVE6LpkJxTUuqFm8.png 1000w" src="https://framerusercontent.com/images/YixzQyDZ22ckVE6LpkJxTUuqFm8.png" alt="Plaid website" >
+                    </div>
                   </a>
                </div>
-            </div>
-            <div class=" w-full sm:w-1/2 p-10 text-right  sm:mt-0 inline ">
-               <img *ngIf='isDarkEnable' [src]="'./assets/images/develop_dark.svg'"
-               class="dark:development development  float-right" alt="Developer">
-               <img *ngIf='!isDarkEnable' [src]="'./assets/images/develop_light.svg'"
-               class="dark:development development  float-right" alt="Developer">
-            </div>
-         </section>
-         <section id="projects"  class="pt-20 flex flex-col gap-20 flex-wrap justify-center items-center">
-            <h1 class="w-full font-medium  mt-4 text-xl md:text-3xl text-center ">Proyectos destacados</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 ">
-               <button href="" class="w-full col-span-1 " *ngFor="let item of projects" (click)="goToProject(item,item.title)">
-               <div class="border-2 border-slate-500/10 rounded-t-lg " >
-                  <div class="flex-none border-b-2 border-slate-500/10">
-                     <div class="flex items-center h-8 space-x-1.5 px-3">
-                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
-                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
-                        <div class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-rqxuj4 framer-1tnasrg" data-framer-name="Knob" name="Knob" href="https://www.framer.com/gallery/knob?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/FUvFMY671aXODEag1MOJZGkzUUQ.png?scale-down-to=512 512w,https://framerusercontent.com/images/FUvFMY671aXODEag1MOJZGkzUUQ.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/FUvFMY671aXODEag1MOJZGkzUUQ.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/FUvFMY671aXODEag1MOJZGkzUUQ.png 2392w" src="https://framerusercontent.com/images/FUvFMY671aXODEag1MOJZGkzUUQ.png" alt="Knob website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
                      </div>
-                  </div>
-                  <div class="  flex flex-col text-sm ">
-                     <img 
-                        [src]="item.img"
-                        class="shadow_img rounded-lg  flex  hover:scale-110 hover:rotate-1 overflow-hidden transition-all duration-500" alt="Developer">
-                  </div>
+                  </a>
                </div>
-               <div class="rounded-b-lg  bg-slate-500/10 flex flex-col gap-4 p-4 items-center justify-center">
-                  <p class="text-2xl font-semibold">{{item.title}}</p>
-                  <p class="text-md font-normal ">{{item.category}}</p>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1jscks framer-1tnasrg" data-framer-name="Tiempo" name="Tiempo" href="https://www.framer.com/gallery/tiempo-fitness?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/LWyEYZpPqW76XVDOeIpRxrar8.png?scale-down-to=1024 1016w,https://framerusercontent.com/images/LWyEYZpPqW76XVDOeIpRxrar8.png?scale-down-to=2048 2032w,https://framerusercontent.com/images/LWyEYZpPqW76XVDOeIpRxrar8.png 2338w" src="https://framerusercontent.com/images/LWyEYZpPqW76XVDOeIpRxrar8.png" alt="Tiempo website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
                </div>
-               </button>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-z8v2mk framer-1tnasrg" data-framer-name="Assemble" name="Assemble" href="https://www.framer.com/gallery/onassemblecom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/XnOQAZU0IXTQKiWZYCHAnPNmc.png?scale-down-to=1024 576w,https://framerusercontent.com/images/XnOQAZU0IXTQKiWZYCHAnPNmc.png 1153w" src="https://framerusercontent.com/images/XnOQAZU0IXTQKiWZYCHAnPNmc.png" alt="Assemble website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1hbsi7h framer-1tnasrg" data-framer-name="Supersonic" name="Supersonic" href="https://www.framer.com/gallery/supersonicruncom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/x8HBcBL7QsZ8PXq4U6s0TxNjnXY.png?scale-down-to=512 512w,https://framerusercontent.com/images/x8HBcBL7QsZ8PXq4U6s0TxNjnXY.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/x8HBcBL7QsZ8PXq4U6s0TxNjnXY.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/x8HBcBL7QsZ8PXq4U6s0TxNjnXY.png 2840w" src="https://framerusercontent.com/images/x8HBcBL7QsZ8PXq4U6s0TxNjnXY.png" alt="Supersonic website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-bmnwc1 framer-1tnasrg" data-framer-name="Punkt" name="Punkt" href="https://www.framer.com/gallery/punktco?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/iwf5h6rg8GLWvRizWcf40xYqSH8.png?scale-down-to=512 512w,https://framerusercontent.com/images/iwf5h6rg8GLWvRizWcf40xYqSH8.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/iwf5h6rg8GLWvRizWcf40xYqSH8.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/iwf5h6rg8GLWvRizWcf40xYqSH8.png 2400w" src="https://framerusercontent.com/images/iwf5h6rg8GLWvRizWcf40xYqSH8.png" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$-->
             </div>
-         </section>
-      </div>
-      <div id="about" class="container mx-auto flex flex-col justify-center items-center gap-10 pt-24">
-         <h1 class="w-full font-medium  text-xl md:text-3xl text-center ">Sobre mí</h1>
-         <div class="grid grid-cols-5  gap-10 justify-center items-center ">
-            <div class="neon border-4 border-bgTern bg-bgTern rounded-full col-span-5 sm:col-span-5 rotate-[10deg] md:col-span-5 relative  mx-auto  w-52 h-52  justify-center items-end flex overflow-hidden">
-               <img class="z-10 -mb-2 -mr-8 shadow-sm  " 
-                  src="../../assets/images/pictur_2.png" alt="user image">
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Left Mobile" name="Left Mobile">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-t02vse framer-1tnasrg" data-framer-name="Oluwatobi M" name="Oluwatobi M" href="https://www.framer.com/gallery/oluwatobi-mayowa?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/WHpit2ENzh6S58jaiwKfaYlGxQ0.png?scale-down-to=1024 614w,https://framerusercontent.com/images/WHpit2ENzh6S58jaiwKfaYlGxQ0.png 778w" src="https://framerusercontent.com/images/WHpit2ENzh6S58jaiwKfaYlGxQ0.png" alt="Framer website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1lfubc4 framer-1tnasrg" data-framer-name="Claudio G" name="Claudio G" href="https://www.framer.com/gallery/work-by-claudio-guglieri?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/tZzWNqQNFDtlyE8swz86tCsiSQ.png 778w" src="https://framerusercontent.com/images/tZzWNqQNFDtlyE8swz86tCsiSQ.png" alt="Claudio Guglieri website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-tj0zy0 framer-1tnasrg" data-framer-name="Valentin L" name="Valentin L" href="https://www.framer.com/gallery/valentin-lauzier?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/QuzeN1lAB0CWmlm0C4J7m84SLDA.png?scale-down-to=1024 515w,https://framerusercontent.com/images/QuzeN1lAB0CWmlm0C4J7m84SLDA.png 778w" src="https://framerusercontent.com/images/QuzeN1lAB0CWmlm0C4J7m84SLDA.png" alt="Framer website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-jcjahe framer-1tnasrg" data-framer-name="Assemble" name="Assemble" href="https://www.framer.com/gallery/onassemblecom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/chB0ukQXRpsRJOMTxiy3RcjSYVQ.png 778w" src="https://framerusercontent.com/images/chB0ukQXRpsRJOMTxiy3RcjSYVQ.png" alt="Assemble website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+              <!--  <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1r8jn64 framer-1tnasrg" data-framer-name="Pinnacle" name="Pinnacle" href="https://www.framer.com/gallery/pinnacledesignlabcom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/u7gDRpyYxq0YZ6n3JhtztUocfM.png 776w" src="https://framerusercontent.com/images/u7gDRpyYxq0YZ6n3JhtztUocfM.png" alt="Pinnacle website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div> -->
+               <!--/$-->
             </div>
-            <div class="px-4 col-span-5 sm:col-span-5 md:col-span-5 font-general-regular w-full text-center sm:text-center mx-auto text-center">
-               <p class="mb-4  text-xl">Desarrollador Full Stack especializado en la creación de aplicaciones web y móviles.
-               </p>
-               <p class="mb-4  text-xl">
-                  Tengo experiencia en desarrollo frontend y backend, trabajando como freelance y con equipos colaborativos. He trabajado principalmente con PHP (Laravel/Symfony) y TypeScript (Angular/Ionic), desarrollando soluciones escalables y de alto rendimiento. Además, tengo sólida experiencia en la creación de APIs con Symfony y Laravel, siempre con un enfoque en la optimización y el uso de mejores prácticas.
-               <p class="mb-4  text-xl">
-                  Me mantengo actualizado con las últimas tecnologías, lo que me permite aplicar soluciones innovadoras y eficientes en cada proyecto.
-               </p>
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Left" name="Left">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-j7hn99 framer-1tnasrg" data-framer-name="Arc" name="Arc" href="https://www.framer.com/gallery/arc-net-boosts?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/JHrc0RZPFFOHwPjmCHM6pJXxQ.png?scale-down-to=512 512w,https://framerusercontent.com/images/JHrc0RZPFFOHwPjmCHM6pJXxQ.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/JHrc0RZPFFOHwPjmCHM6pJXxQ.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/JHrc0RZPFFOHwPjmCHM6pJXxQ.png 2400w" src="https://framerusercontent.com/images/JHrc0RZPFFOHwPjmCHM6pJXxQ.png" alt="Arc boost gallery website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1lbwebr framer-1tnasrg" data-framer-name="Unifers" name="Unifers" href="https://www.framer.com/gallery/unifiersofjapanframerwebsite?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/NGiCkX4A288j5Hvk7VuYfmMXsRM.png?scale-down-to=512 512w,https://framerusercontent.com/images/NGiCkX4A288j5Hvk7VuYfmMXsRM.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/NGiCkX4A288j5Hvk7VuYfmMXsRM.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/NGiCkX4A288j5Hvk7VuYfmMXsRM.png 2770w" src="https://framerusercontent.com/images/NGiCkX4A288j5Hvk7VuYfmMXsRM.png" alt="Framer website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1u9m1ut framer-1tnasrg" data-framer-name="Planhat" name="Planhat" href="https://www.framer.com/gallery/planhat?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/5RLXCDCRGmLbJQ7HHfVh6TvFNNM.png?scale-down-to=1024 575w,https://framerusercontent.com/images/5RLXCDCRGmLbJQ7HHfVh6TvFNNM.png 998w" src="https://framerusercontent.com/images/5RLXCDCRGmLbJQ7HHfVh6TvFNNM.png" alt="Planhat website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-jxp9p7 framer-1tnasrg" data-framer-name="Rive" name="Rive" href="https://www.framer.com/gallery/rive-app?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/pNetA0Ig8NMQseI4YRkQylANcU.png?scale-down-to=512 512w,https://framerusercontent.com/images/pNetA0Ig8NMQseI4YRkQylANcU.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/pNetA0Ig8NMQseI4YRkQylANcU.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/pNetA0Ig8NMQseI4YRkQylANcU.png 2400w" src="https://framerusercontent.com/images/pNetA0Ig8NMQseI4YRkQylANcU.png" alt="Rive website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1bzm0aa framer-1tnasrg" data-framer-name="Yuna" name="Yuna" href="https://www.framer.com/gallery/yunastoriescom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/0i4G1xf9jsFHCOWCSnm8ofDB9sM.png?scale-down-to=1024 574w,https://framerusercontent.com/images/0i4G1xf9jsFHCOWCSnm8ofDB9sM.png?scale-down-to=2048 1149w,https://framerusercontent.com/images/0i4G1xf9jsFHCOWCSnm8ofDB9sM.png 1197w" src="https://framerusercontent.com/images/0i4G1xf9jsFHCOWCSnm8ofDB9sM.png" alt="Yuna website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1bbtw2a framer-1tnasrg" href="https://www.framer.com/gallery/ecomflowcom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="394px" srcset="https://framerusercontent.com/images/YZ14NQ4UCT9VLbNw6X6YWVFQS8.png?scale-down-to=1024 575w,https://framerusercontent.com/images/YZ14NQ4UCT9VLbNw6X6YWVFQS8.png 998w" src="https://framerusercontent.com/images/YZ14NQ4UCT9VLbNw6X6YWVFQS8.png" alt="Framer Website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$-->
+            </div>
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Center" name="Center">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-n8qny2 framer-1tnasrg" data-framer-name="Rekorder" name="Rekorder" href="https://www.framer.com/gallery/rekorderstudioscom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/phKVTc0XuUUp9fnG2iIEe2UYl6U.png?scale-down-to=512 512w,https://framerusercontent.com/images/phKVTc0XuUUp9fnG2iIEe2UYl6U.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/phKVTc0XuUUp9fnG2iIEe2UYl6U.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/phKVTc0XuUUp9fnG2iIEe2UYl6U.png 2798w" src="https://framerusercontent.com/images/phKVTc0XuUUp9fnG2iIEe2UYl6U.png" alt="Rekorder website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-2mmpq1 framer-1tnasrg" data-framer-name="Supersonic" name="Supersonic" href="https://threads.com/" target="_blank" rel="noopener" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/secLK4TPpKhKwf6L0bEnPG246JQ.png?scale-down-to=512 512w,https://framerusercontent.com/images/secLK4TPpKhKwf6L0bEnPG246JQ.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/secLK4TPpKhKwf6L0bEnPG246JQ.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/secLK4TPpKhKwf6L0bEnPG246JQ.png 2400w" src="https://framerusercontent.com/images/secLK4TPpKhKwf6L0bEnPG246JQ.png" alt="Supersonic website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-pt8ctb framer-1tnasrg" data-framer-name="Multi" name="Multi" href="https://www.framer.com/gallery/multi?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/M5Gk7jNjYinKtnK7iUgbRHwg6q0.png?scale-down-to=1024 575w,https://framerusercontent.com/images/M5Gk7jNjYinKtnK7iUgbRHwg6q0.png?scale-down-to=2048 1150w,https://framerusercontent.com/images/M5Gk7jNjYinKtnK7iUgbRHwg6q0.png 1198w" src="https://framerusercontent.com/images/M5Gk7jNjYinKtnK7iUgbRHwg6q0.png" alt="Multi website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-19pe5ql framer-1tnasrg" data-framer-name="Contra" name="Contra" href="https://www.framer.com/enterprise/customers/contra/?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/s0U1xTRRdjFBkQqDEjaCGvDqh8.png?scale-down-to=1024 619w,https://framerusercontent.com/images/s0U1xTRRdjFBkQqDEjaCGvDqh8.png 1000w" src="https://framerusercontent.com/images/s0U1xTRRdjFBkQqDEjaCGvDqh8.png" alt="Contra website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-10cdpb framer-1tnasrg" data-framer-name="Atomize" name="Atomize" href="https://atomizedesign.com/" target="_blank" rel="noopener">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/cV5lGUJJ9OkvAkXGg1GADHis.png?scale-down-to=512 512w,https://framerusercontent.com/images/cV5lGUJJ9OkvAkXGg1GADHis.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/cV5lGUJJ9OkvAkXGg1GADHis.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/cV5lGUJJ9OkvAkXGg1GADHis.png 2800w" src="https://framerusercontent.com/images/cV5lGUJJ9OkvAkXGg1GADHis.png" alt="Atomize website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-12noztz framer-1tnasrg" href="https://www.framer.com/awards/nominees/jessicawellsco?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/N5IfcRwC36qV1qt8Mo0pzJcT9w.png?scale-down-to=1024 583w,https://framerusercontent.com/images/N5IfcRwC36qV1qt8Mo0pzJcT9w.png?scale-down-to=2048 1167w,https://framerusercontent.com/images/N5IfcRwC36qV1qt8Mo0pzJcT9w.png 1552w" src="https://framerusercontent.com/images/N5IfcRwC36qV1qt8Mo0pzJcT9w.png" alt="Framer website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$-->
+            </div>
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Right Mobile" name="Right Mobile">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-10g6snm framer-1tnasrg" data-framer-name="Alex N" name="Alex N" href="https://www.framer.com/gallery/alexnaghavicom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/3EjtuTQPptwr3GmBLxt3YpGUzs.png?scale-down-to=2048 763w,https://framerusercontent.com/images/3EjtuTQPptwr3GmBLxt3YpGUzs.png 784w" src="https://framerusercontent.com/images/3EjtuTQPptwr3GmBLxt3YpGUzs.png" alt="Framer portfolio mobile version" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1d2nrew framer-1tnasrg" data-framer-name="Thirsty Dumpling" name="Thirsty Dumpling" href="https://www.framer.com/gallery/thirstydumplingcom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/pzs2HliDLIJKZxMBehPqm3rpNM.png?scale-down-to=1024 525w,https://framerusercontent.com/images/pzs2HliDLIJKZxMBehPqm3rpNM.png 776w" src="https://framerusercontent.com/images/pzs2HliDLIJKZxMBehPqm3rpNM.png" alt="Thirsty dumpling website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-14ogxfn framer-1tnasrg" data-framer-name="Chipper" name="Chipper" href="https://www.framer.com/gallery/packalycom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/LJ8EmGav0E3Ss2vBjxgTnyiHEBw.png?scale-down-to=1024 634w,https://framerusercontent.com/images/LJ8EmGav0E3Ss2vBjxgTnyiHEBw.png 778w" src="https://framerusercontent.com/images/LJ8EmGav0E3Ss2vBjxgTnyiHEBw.png" alt="Chipper website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-116y5nh framer-1tnasrg" data-framer-name="Aimpie" name="Aimpie" href="https://www.framer.com/gallery/aimpiedesign?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/E3qCsuYWVV6lIqDpleTv7cbruvk.png 778w" src="https://framerusercontent.com/images/E3qCsuYWVV6lIqDpleTv7cbruvk.png" alt="Aimpie website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <!-- <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-29glqk framer-1tnasrg" data-framer-name="Packaly" name="Packaly" href="https://www.framer.com/gallery/packalycom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/u6oRpHzLdLtmVtorht8rCe08lU.png?scale-down-to=1024 528w,https://framerusercontent.com/images/u6oRpHzLdLtmVtorht8rCe08lU.png 778w" src="https://framerusercontent.com/images/u6oRpHzLdLtmVtorht8rCe08lU.png" alt="Packaly website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div> -->
+               <!--/$-->
+            </div>
+            <div class="flex flex-col space-y-2 w-full" data-framer-name="Far Right" name="Far Right">
+               <!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-3jdvkk framer-1tnasrg" data-framer-name="Artboard" name="Artboard" href="https://www.framer.com/gallery/artboard-studio?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/MKebsjw7AIp52N4FYji7xtbUqI.png?scale-down-to=1024 633w,https://framerusercontent.com/images/MKebsjw7AIp52N4FYji7xtbUqI.png?scale-down-to=2048 1266w,https://framerusercontent.com/images/MKebsjw7AIp52N4FYji7xtbUqI.png 1598w" src="https://framerusercontent.com/images/MKebsjw7AIp52N4FYji7xtbUqI.png" alt="Artboard website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1uygzw8 framer-1tnasrg" data-framer-name="DEEO" name="DEEO" href="https://www.framer.com/gallery/deeo-studio?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank" >
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/JBauPF6ULpBVSUDMw6MpRqMF2PU.png?scale-down-to=1024 575w,https://framerusercontent.com/images/JBauPF6ULpBVSUDMw6MpRqMF2PU.png 950w" src="https://framerusercontent.com/images/JBauPF6ULpBVSUDMw6MpRqMF2PU.png" alt="DEEO website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1160pf6 framer-1tnasrg" data-framer-name="Antoine E" name="Antoine E" href="https://www.framer.com/gallery/antoineenaultcom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/gvpERT9zD3ZqiJkBlkdsnW6CJwY.png?scale-down-to=512 512w,https://framerusercontent.com/images/gvpERT9zD3ZqiJkBlkdsnW6CJwY.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/gvpERT9zD3ZqiJkBlkdsnW6CJwY.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/gvpERT9zD3ZqiJkBlkdsnW6CJwY.png 2974w" src="https://framerusercontent.com/images/gvpERT9zD3ZqiJkBlkdsnW6CJwY.png" alt="Framer website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$--><!--$-->
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-98g1yi framer-1tnasrg" data-framer-name="Page Break" name="Page Break" href="https://www.framer.com/gallery/pagebreaknyc?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="393px" srcset="https://framerusercontent.com/images/2DMpiopmV0LHrnxk0GVgYpL3g.png?scale-down-to=1024 576w,https://framerusercontent.com/images/2DMpiopmV0LHrnxk0GVgYpL3g.png?scale-down-to=2048 1152w,https://framerusercontent.com/images/2DMpiopmV0LHrnxk0GVgYpL3g.png 1200w" src="https://framerusercontent.com/images/2DMpiopmV0LHrnxk0GVgYpL3g.png" alt="Page Break website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <div class="ssr-variant hidden-1u310t9">
+                  <a class="framer-1r8jn64 framer-1tnasrg" data-framer-name="Pinnacle" name="Pinnacle" href="https://www.framer.com/gallery/pinnacledesignlabcom?utm_source=google&amp;utm_medium=adwords&amp;utm_campaign=Brand-Search-Framer-M-Aug2024-PUBLISH_Standard&amp;gad_source=1&amp;gclid=CjwKCAjwooq3BhB3EiwAYqYoEg9Eq_thS-CrYCsh0dv9Vh6IbBMBdEx31jJOfFdCMbk6c595cJpAbxoCMW4QAvD_BwE" target="_blank">
+                     <div data-framer-background-image-wrapper="true"><img decoding="async" sizes="190px" srcset="https://framerusercontent.com/images/u7gDRpyYxq0YZ6n3JhtztUocfM.png 776w" src="https://framerusercontent.com/images/u7gDRpyYxq0YZ6n3JhtztUocfM.png" alt="Pinnacle website" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"></div>
+                  </a>
+               </div>
+               <!--/$-->
             </div>
          </div>
-      </div>
-      <div class="w-full py-10">
-         <p class="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">Tecnologias con las que he trabajado
-         </p>
-      </div>
-      <div class="container mx-auto pt-10" >
-         <div class="" >
-            <div class="grid grid-cols-3 sm:grid-cols-5 mt-10 gap-8 items-center md:gap-10 justify-center ">
-               <img src="../../assets/logos/Angular.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/TypeScript.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/JavaScript.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/HTML5.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/CSS3.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Laravel.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/PHP.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/symfony-svgrepo-com.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/MySQL.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Docker.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Ionic.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Android.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Swift.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/C_sharp.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-               <img src="../../assets/logos/Xamarin.svg" class="w-20 mx-auto md:w-30  border-ternary-light dark:border-ternary-dark cursor-pointer">
-            </div>
+    </section>
+<!--
+
+ <section class=" section5 max-w-screen-2xl p-4 md:p-20 flex flex-col h-full w-full  group  overflow-visible">
+   <div class="flex w-full my-10  gap-2 z-50 justify-between items-center">
+    <p class="font-semibold text-5xl">Trusted by 300,000+ <br>
+      leading organizations
+   </p>
+   <div class="  flex gap-4">
+      <svg width="20px" height="20px" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <title>Slide Left</title>
+           <path d="m11.879 18.385-6.607-6.607h16.612V9.024H5.272l6.622-6.62L9.989.527.116 10.401l9.873 9.873 1.89-1.89Z" fill="currentColor"></path>
+         </svg>
+      <svg width="20px" height="20px" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <title>Slide Right</title>
+           <path d="m10.121 18.385 6.606-6.607H.117V9.024h16.61l-6.62-6.62L12.01.527l9.873 9.873-9.873 9.873-1.89-1.89Z" fill="currentColor"></path>
+         </svg>
+   </div>
+   </div>
+<div  #scrollContainer class="div1 animate-fade-in-left animate-delay-200 animate-duration-1000  scroll-container flex  gap-10  p-10 overflow-x-auto">
+   <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+    rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+    rounded flex flex-col border border-orange-500  
+    hover:bg-orange-500 hover:shadow-orange-500  hover:text-bgPrim" >
+      <div class="flex flex-col justify-between h-full items-start ">
+         <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor">
+               <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+            </g>
+         </svg>
+         <div class="flex flex-col items-start">
+            <p class="md:text-7xl font-bold">
+               >1.3M 
+            </p>
+            <p class="font-semibold">
+               views</p>
          </div>
-         <section id="contact" class="border-t border-slate-500/10 w-full mt-20 py-20 flex flex-col gap-10 flex-wrap justify-center items-center">
-            <h1 class="w-full font-medium  mt-4 text-xl md:text-3xl text-center ">Contacto</h1>
-            <ul class="flex flex-wrap gap-4 sm:gap-8 mt-4  ">
+         <p class="font-medium">
+            Read story → </p>
+      </div>
+    </div>
+    <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+     rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+     rounded flex flex-col border border-blue-500  
+     hover:bg-blue-500 hover:shadow-blue-500  hover:text-bgPrim" >
+       <div class="flex flex-col justify-between h-full items-start ">
+          <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <g fill="currentColor">
+                <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+             </g>
+          </svg>
+          <div class="flex flex-col items-start">
+             <p class="md:text-7xl font-bold">
+                >1.3M 
+             </p>
+             <p class="font-semibold">
+                views</p>
+          </div>
+          <p class="font-medium">
+             Read story → </p>
+       </div>
+     </div>
+     <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+    rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+    rounded flex flex-col border border-pink-500  
+    hover:bg-pink-500 hover:shadow-pink-500  hover:text-bgPrim" >
+      <div class="flex flex-col justify-between h-full items-start ">
+         <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor">
+               <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+            </g>
+         </svg>
+         <div class="flex flex-col items-start">
+            <p class="md:text-7xl font-bold">
+               >1.3M 
+            </p>
+            <p class="font-semibold">
+               views</p>
+         </div>
+         <p class="font-medium">
+            Read story → </p>
+      </div>
+    </div>
+    <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+     rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+    rounded flex flex-col border border-green-500  
+    hover:bg-green-500 hover:shadow-green-500  hover:text-bgPrim" >
+      <div class="flex flex-col justify-between h-full items-start ">
+         <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor">
+               <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+            </g>
+         </svg>
+         <div class="flex flex-col items-start">
+            <p class="md:text-7xl font-bold">
+               >1.3M 
+            </p>
+            <p class="font-semibold">
+               views</p>
+         </div>
+         <p class="font-medium">
+            Read story → </p>
+      </div>
+    </div>
+    <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+     rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+    rounded flex flex-col border border-purple-500  
+    hover:bg-purple-500 hover:shadow-purple-500  hover:text-bgPrim" >
+      <div class="flex flex-col justify-between h-full items-start ">
+         <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor">
+               <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+            </g>
+         </svg>
+         <div class="flex flex-col items-start">
+            <p class="md:text-7xl font-bold">
+               >1.3M 
+            </p>
+            <p class="font-semibold">
+               views</p>
+         </div>
+         <p class="font-medium">
+            Read story → </p>
+      </div>
+    </div>
+    <div class="item flex-none h-[250px] md:h-[450px] w-[200px] md:w-[400px]  
+     rounded p-10 w-80 text-center shadow-[0_0_25px_rgba(0,255,255,0.0)]
+     rounded flex flex-col border border-red-500  
+     hover:bg-red-500 hover:shadow-red-500  hover:text-bgPrim" >
+       <div class="flex flex-col justify-between h-full items-start ">
+          <svg viewBox="0 0 125 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <g fill="currentColor">
+                <path d="M122.78 1.148c.102 0 .168-.063.168-.17 0-.103-.066-.16-.168-.16h-.164v.33h.164Zm-.358-.474h.396c.195 0 .326.12.326.305a.266.266 0 0 1-.188.264v.006s.011.01.035.055l.197.369h-.213l-.192-.387h-.167v.387h-.194V.674Zm.334 1.29c.441 0 .78-.344.78-.787a.772.772 0 0 0-.78-.786.77.77 0 0 0-.772.786.77.77 0 0 0 .772.787Zm0-1.753c.544 0 .98.429.98.966a.97.97 0 0 1-.98.967.966.966 0 1 1 0-1.933ZM117.881 17v.015a2.894 2.894 0 0 1-.628 1.897l.015.03.016-.015a1.9 1.9 0 0 1-1.586.639h-2.417v-5.012h2.433a1.902 1.902 0 0 1 1.586.638l-.016-.015c.419.518.631 1.165.597 1.822Zm-4.6-11.725h2.135a1.846 1.846 0 0 1 1.428.531l.031.03c.372.486.549 1.083.503 1.684.059.634-.144 1.282-.534 1.81v-.016a1.758 1.758 0 0 1-1.412.577h-2.151V5.275Zm9.592 11.694v.03c0-1.944-.91-3.797-2.48-5.012l.03.015.031-.03a6.276 6.276 0 0 0 2.026-4.602v.091a7.005 7.005 0 0 0-1.821-4.95l.032.044c-1.333-1.439-3.246-2.248-5.244-2.216h-6.814a.415.415 0 0 0-.423.406V23.97c0 .229.188.411.423.411h7.096c2.152.03 4.208-.866 5.589-2.46l-.015.015a7.403 7.403 0 0 0 1.57-4.966ZM50.142 17.288V.764A.406.406 0 0 0 49.733.4h-4.348c-.22 0-.408.152-.424.365v16.523a2.8 2.8 0 0 1-.596 1.883c-.715.745-1.916.801-2.7.122a.6.6 0 0 1-.142-.137 2.79 2.79 0 0 1-.565-1.837V.764A.374.374 0 0 0 40.55.4h-4.365a.387.387 0 0 0-.424.35v16.539a7.52 7.52 0 0 0 1.834 5.464 7.286 7.286 0 0 0 5.325 2.023h.063a7.286 7.286 0 0 0 5.324-2.023 7.516 7.516 0 0 0 1.834-5.464ZM85.874.399H81.6a.416.416 0 0 0-.424.407v8.993H76.86V.81a.415.415 0 0 0-.42-.41h-4.243a.416.416 0 0 0-.423.407V23.97c0 .228.188.41.423.41h4.255a.416.416 0 0 0 .424-.407v-9.313h4.317v9.31c0 .228.189.41.424.41h4.254a.416.416 0 0 0 .424-.407V.81a.415.415 0 0 0-.42-.41ZM63.578 16.999v.015c.032.683-.203 1.352-.628 1.898l.016.03.016-.015a1.9 1.9 0 0 1-1.586.638H58.98v-5.011h2.433a1.9 1.9 0 0 1 1.586.638l-.016-.016c.42.518.631 1.166.596 1.823Zm-4.6-11.725h2.136a1.846 1.846 0 0 1 1.429.532l.03.03a2.46 2.46 0 0 1 .504 1.684c.059.634-.145 1.281-.534 1.81v-.016a1.758 1.758 0 0 1-1.413.577h-2.151V5.274Zm9.625 11.695v.06c0-1.96-.91-3.797-2.48-5.027l.03-.03a6.278 6.278 0 0 0 2.025-4.59 7.022 7.022 0 0 0-1.82-4.78v.015C65.023 1.177 63.111.368 61.113.399h-6.783a.416.416 0 0 0-.424.407v23.163c0 .229.189.41.424.41h7.129c2.15.031 4.207-.865 5.589-2.46l-.016.015a7.4 7.4 0 0 0 1.57-4.965ZM104.428 17.287V.764a.402.402 0 0 0-.392-.365h-4.381a.386.386 0 0 0-.423.343v16.546a2.805 2.805 0 0 1-.565 1.852c-.713.759-1.925.82-2.716.137a.595.595 0 0 1-.142-.137 2.786 2.786 0 0 1-.565-1.837V.763C95.228.552 95.04.4 94.82.4h-4.364c-.22 0-.409.152-.424.365v16.569c-.141 1.944.519 3.903 1.837 5.421l.047.046c3.061 2.658 7.724 2.627 10.738-.09l-.062.044a7.517 7.517 0 0 0 1.836-5.467ZM27 9.785h.016a2.221 2.221 0 0 1-1.695.668h-2.088V5.274h2.072a2.222 2.222 0 0 1 1.695.67v-.016c.442.514.672 1.169.644 1.837v.03A2.777 2.777 0 0 1 27 9.785Zm2.638 4.268.016-.015c.439-.29.832-.638 1.193-1.018l-.016.03a7.49 7.49 0 0 0 1.915-5.255V7.75a7.352 7.352 0 0 0-1.994-5.148l.079.09A7.232 7.232 0 0 0 25.698.37h-7.144a.416.416 0 0 0-.424.407v23.193c0 .229.189.411.424.411h4.255a.416.416 0 0 0 .424-.407V15.39h1.57l2.684 8.747c.047.168.22.29.408.29h4.522a.444.444 0 0 0 .345-.168.376.376 0 0 0 0-.364l-3.124-9.842ZM13.012 2.04A7.348 7.348 0 0 0 7.673.004h-.03A7.287 7.287 0 0 0 2.304 2.04l.047-.06A7.536 7.536 0 0 0 .42 7.43v9.872a7.52 7.52 0 0 0 1.834 5.464A7.287 7.287 0 0 0 7.58 24.79h.078a7.287 7.287 0 0 0 5.338-2.035 7.515 7.515 0 0 0 1.837-5.467v-5.392a.44.44 0 0 0-.44-.41h-6.28a.455.455 0 0 0-.455.41v4.039a.446.446 0 0 0 .455.425H9.84v.927a2.989 2.989 0 0 1-.596 1.944l.016-.016a1.846 1.846 0 0 1-1.555.669h-.031a1.823 1.823 0 0 1-1.554-.638 2.865 2.865 0 0 1-.628-1.929v-9.81a2.93 2.93 0 0 1 .66-1.974 1.846 1.846 0 0 1 1.553-.668h.032a1.826 1.826 0 0 1 1.554.638l.032.03c.396.578.579 1.268.517 1.959v.911c.016.213.204.365.424.365h4.255c.22 0 .408-.152.424-.365v-.926a7.447 7.447 0 0 0-1.947-5.437h.016Z"></path>
+             </g>
+          </svg>
+          <div class="flex flex-col items-start">
+             <p class="md:text-7xl font-bold">
+                >1.3M 
+             </p>
+             <p class="font-semibold">
+                views</p>
+          </div>
+          <p class="font-medium">
+             Read story → </p>
+       </div>
+     </div>
+</div>
+</section>
+    
+-->
+ <section class=" w-full flex h-full justify-center p-4 md:px-20 md:pt-20 pb-0">
+      <div class="px-1 md:px-10   flex flex-col gap-2 z-50 justify-center items-center">
+           <p class="text-center  banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+       -webkit-background-clip: text;
+               background-clip: text;
+       -webkit-text-fill-color: transparent;">Contáctanos</p>   
+       <p class="text-center  font-semibold text-3xl">Momentos que ruedan</p>
+            <p class="text-center animate-slide-in-bottom animate-delay-400 animate-duration-600" >¿Tienes dudas, sugerencias o quieres unirte a La Petja Skate Club? <br> Estamos aquí para ayudarte. Escríbenos, llámanos o visítanos, ¡te esperamos sobre ruedas!</p>
+      </div>
+   </section>
+   <section class="max-w-screen-2xl gap-10 px-4 md:px-20 pt-20 pb-52 w-full flex flex-col lg:flex-row  justify-center items-center framer-glb1nx" >
+      <div class=" z-10 max-w-screen-2xl w-full lg:w-1/2  flex flex-col flex-nowrap gap-10  ">
+ 
+            <p class="animate-slide-in-bottom animate-delay-400 animate-duration-600" >¿Tienes dudas, sugerencias o quieres unirte a La Petja Skate Club? Estamos aquí para ayudarte. Escríbenos, llámanos o visítanos, ¡te esperamos sobre ruedas!</p>
+            <!-- <a class="w-min p-1 px-4 bg-primary font-semibold rounded  animate-slide-in-bottom animate-delay-500 animate-duration-600">
+               <p>Business</p>
+               </a> -->
+               <div class="flex w-full gap-2">
+                  <app-button3d 
+               [rounded]="'7px'" [title]="''"
+                 [bg_front_color]="'#25D366'" 
+               [bg_back_color]="'#188B42'" 
+               [border_style]="'solid #74E79E var(--border)'" 
+               font_size="14px" [font_body_weight]="'900'"  [height]="'32px'"
+               [width]="'50px'" [raise]="4">
+               <div class="flex gap-3  items-center uppercase">
+                  <svg width="18" height="18"  fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>whatsapp</title> <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path> </g></svg>
+               </div>
+               </app-button3d>
+                  <app-button3d 
+               [rounded]="'7px'" [title]="''"
+                   [bg_front_color]="'linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4)'" 
+               [bg_back_color]="'#9E1A55'" 
+               [border_style]="'solid #F4B9D3 var(--border)'" 
+               [type]="'btn_disabled'"
+               font_size="14px" [font_body_weight]="'900'"  [height]="'32px'"
+               [width]="'50px'" [raise]="4">
+               <div class="flex gap-3  items-center uppercase">
+                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path> </g></svg>
+               </div>
+               </app-button3d>
+            <app-button3d 
+               [rounded]="'7px'" [title]="''"
+               [type]="'btn_disabled'"
+               font_size="14px" [font_body_weight]="'900'"  [height]="'32px'"
+               [width]="'50px'" [raise]="4">
+               <div class="flex gap-3  items-center uppercase">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
+                     <path fill="#FFF" d="M4.9,14L25,30.5L45.1,14v-3.7H4.9V14z M4.9,36.4l9.9-11l-9.9-8.9C4.9,16.6,4.9,36.4,4.9,36.4zM45.1,36.7L34.9,25.5L45,16.7L45.1,36.7L45.1,36.7z M25,33.7l-8.2-6.8L4.9,39.6h40.2L33.2,26.8L25,33.7z"></path>
+                  </svg>
+               </div>
+               </app-button3d>
+               </div>
+        </div>
+   <div class="flex w-full lg:w-1/2 h-full relative">
+      <!--<img style="  z-index: 2;mask:radial-gradient(150% 110% at 0% 0%,#000 42.85789695945946%,rgba(0,0,0,0) 100%) add;"
+      class=" w-full h-full test border border-textPrimary/70  rounded " src="/assets/images/lapetja/448004317_1219849945803264_3862966259540462880_n.jpg" alt="">-->
+      <app-map-example  class="test border border-textPrimary/70  rounded"></app-map-example>
+   </div>
+    <div class="framer-746qzd" data-framer-name="Glow" name="Glow"></div>
+      <div data-framer-name="Glow" name="Glow" class="framer-yz9qzl hidden-1ja8gbp">
+         <div class="framer-lw3v16" data-framer-name="1" name="1"></div>
+         <div class="framer-g380qr" data-framer-name="2" name="2"></div>
+         <div class="framer-4l5dvf" data-framer-name="bg" name="bg"></div>
+      </div>
+   </section>
+    <section class="hidden relative w-full  flex justify-center items-start section3  h-[100vh]  ">
+        <div class="absolute w-full h-[100vh]">
+            <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        </div>
+        <div class="circle2 rounded-full w-[400px] h-[300px] bg-blue-400"></div>
+    </section>
+    <section class="hidden relative w-full  flex justify-start items-center section2  h-[100vh] overflow-x-hidden">
+        <div class="absolute w-full h-[100vh]">
+            <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        </div>
+        <div class="circle rounded-full h-[200vh] w-[10vh] bg-blue-400"></div>
+    </section>
+
+</main>
+<footer class="hidden container mx-auto justify-self-end  self-end place place-self-end" >
+         <div class="flex gap-4  px-4 self-end place place-self-center">
+               </div> 
+         <section id="contact" class="border-t border-slate-400/10 w-full mt-10 py-6 flex flex-col gap-10 flex-wrap justify-center items-center">
+            <ul class="flex flex-wrap gap-4 sm:gap-8   ">
+               <app-button3d 
+               [rounded]="'7px'" [title]="''"
+               [bg_front_color]="'#EC9832'" 
+               [bg_back_color]="'#BB6E11'" 
+               [border_style]="'solid #F1B46A var(--border)'" 
+               font_size="14px" [font_body_weight]="'900'"  [height]="'30px'"
+               [width]="'70px'" [raise]="4">
+               <a role="button" href="https://github.com/francescfores">
+                  <div class="flex gap-3  items-center uppercase">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Environment / Coffe_To_Go"> <path id="Vector" d="M6.68604 15H17.3146M6.51465 13H17.4861M7.74316 7H16.2571M7.74316 7C7.13829 7 6.8358 7 6.61279 7.12093C6.41686 7.22718 6.26205 7.3963 6.17292 7.60059C6.07151 7.83303 6.0973 8.13407 6.14893 8.73633L6.94921 18.073C7.0377 19.1053 7.08203 19.6225 7.31149 20.0132C7.51358 20.3572 7.81426 20.6327 8.17432 20.8047C8.58318 21 9.10126 21 10.1377 21H13.8628C14.8992 21 15.4174 21 15.8263 20.8047C16.1864 20.6327 16.4869 20.3572 16.689 20.0132C16.9185 19.6225 16.9628 19.1056 17.0513 18.073L17.8517 8.73471C17.9033 8.13312 17.929 7.8329 17.8276 7.60059C17.7385 7.3963 17.5838 7.22718 17.3878 7.12093C17.1648 7 16.862 7 16.2571 7M7.74316 7H6.7499C5.85031 7 5.40023 7 5.13867 6.81152C4.90778 6.64515 4.75884 6.38816 4.72894 6.10515C4.69504 5.78431 4.91871 5.3929 5.36568 4.6107L5.36621 4.60977C5.70039 4.02496 5.86748 3.73255 6.10197 3.51953C6.31161 3.32909 6.55925 3.18544 6.82861 3.09791C7.12991 3 7.46658 3 8.14014 3H15.8604C16.5339 3 16.8707 3 17.172 3.09791C17.4413 3.18544 17.6888 3.32909 17.8984 3.51953C18.1329 3.73255 18.3 4.02496 18.6342 4.60977C19.0813 5.39224 19.3053 5.78425 19.2714 6.10515C19.2415 6.38816 19.0925 6.64515 18.8616 6.81152C18.6001 7 18.1497 7 17.2501 7H16.2571" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                  </div>
+               </a>
+               </app-button3d>
                <a href="mailto:ffores93@gmail.com" role="button" >
                <app-button3d 
                [rounded]="'7px'" [title]="''"
                [type]="'btn_disabled'"
-               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
-               [width]="'80px'" [raise]="6">
+               font_size="14px" [font_body_weight]="'900'"  [height]="'30px'"
+               [width]="'70px'" [raise]="4">
                <div class="flex gap-3  items-center uppercase">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
                      <path fill="#FFF" d="M4.9,14L25,30.5L45.1,14v-3.7H4.9V14z M4.9,36.4l9.9-11l-9.9-8.9C4.9,16.6,4.9,36.4,4.9,36.4zM45.1,36.7L34.9,25.5L45,16.7L45.1,36.7L45.1,36.7z M25,33.7l-8.2-6.8L4.9,39.6h40.2L33.2,26.8L25,33.7z"></path>
                   </svg>
                </div>
@@ -129,11 +805,11 @@
                [bg_front_color]="'#0284c7'" 
                [bg_back_color]="'#075985'" 
                [border_style]="'solid #38bdf8 var(--border)'" 
-               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
-               [width]="'80px'" [raise]="6">
+               font_size="14px" [font_body_weight]="'900'"  [height]="'30px'"
+               [width]="'70px'" [raise]="4">
                <a  role="button" href="https://www.linkedin.com/in/francesc-for%C3%A9s-campos-3494a2147">
                   <div class="flex gap-3  items-center uppercase">
-                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
                         <path fill="#FFF" d="M13.8,41.7H5.4V13.6h8.4C13.8,13.6,13.8,41.7,13.8,41.7z M44.7,41.7h-8.4v-15c0-3.9-1.4-5.9-4.2-5.9c-2.2,0-3.6,1.1-4.3,3.3c0,3.5,0,17.6,0,17.6h-8.4c0,0,0.1-25.3,0-28.1h6.7l0.5,5.6h0.2c1.7-2.8,4.5-4.7,8.3-4.7c2.9,0,5.2,0.8,7,2.8s2.7,4.7,2.7,8.5L44.7,41.7L44.7,41.7z M9.6,2.3C12,2.3,14,4.2,14,6.5s-2,4.2-4.4,4.2S5.2,8.8,5.2,6.5C5.3,4.2,7.2,2.3,9.6,2.3z"></path>
                      </svg>
                   </div>
@@ -144,11 +820,11 @@
                [bg_front_color]="'#1e293b'" 
                [bg_back_color]="'#111827'" 
                [border_style]="'solid #475569 var(--border)'" 
-               font_size="14px" [font_body_weight]="'900'"  [height]="'40px'"
-               [width]="'80px'" [raise]="6">
+               font_size="14px" [font_body_weight]="'900'"  [height]="'30px'"
+               [width]="'70px'" [raise]="4">
                <a role="button" href="https://github.com/francescfores">
                   <div class="flex gap-3  items-center uppercase">
-                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="24" height="24">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
                         <path fill="#FFF" d="M25,2.5C12.2,2.5,1.9,12.8,1.9,25.6c0,10.2,6.6,18.9,15.8,21.9c1.2,0.2,1.5-0.5,1.5-1.1c0-0.5,0-2.1,0-4c-6.4,1.4-7.8-3-7.8-3c-1-2.7-2.6-3.4-2.6-3.4C6.7,34.6,9,34.6,9,34.6c2.3,0.2,3.5,2.4,3.5,2.4c2.1,3.5,5.4,2.5,6.7,1.9c0.2-1.5,0.8-2.5,1.5-3.1c-5.1-0.6-10.5-2.6-10.5-11.4c0-2.5,0.9-4.6,2.4-6.2c-0.2-0.6-1-2.9,0.2-6.1c0,0,1.9-0.6,6.3,2.4c1.8-0.5,3.8-0.8,5.8-0.8s3.9,0.3,5.8,0.8c4.4-3,6.3-2.4,6.3-2.4c1.3,3.2,0.5,5.5,0.2,6.1c1.5,1.6,2.4,3.7,2.4,6.2c0,8.9-5.4,10.8-10.5,11.4c0.8,0.7,1.6,2.1,1.6,4.3c0,2.9,0,5.6,0,6.4c0,0.6,0.4,1.3,1.5,1.1C41.4,44.5,48,35.9,48,25.7C48.1,12.8,37.8,2.5,25,2.5z"></path>
                      </svg>
                   </div>
@@ -156,11 +832,11 @@
                </app-button3d>
             </ul>
          </section>
-         <div class="py-2 font-general-regular flex justify-center items-center text-center">
-            <div class="text-xl">© 2024
-               <a href="https://francescfores.github.io/" target="__blank" class="font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500">Francesc Fores</a>
+         <div class="hidden py-0 font-general-regular flex justify-center items-center text-center">
+            <div class="text-sm">© 2024
+               <a href="https://francescfores.github.io/" target="__blank" class="font-normal uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500">Francesc Fores</a>
             </div>
          </div>
-      </div>
-   </div>
+      </footer>
 </div>
+

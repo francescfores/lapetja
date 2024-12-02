@@ -27,3 +27,15 @@
     opacity: 0;
   }
 }
+
+.banco{
+  font-family: 'Banco Regular', sans-serif;
+  /*color: #6bda90 !important;*/
+}
+
+@font-face {
+  font-family: 'Banco Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Banco Regular'), url('./assets/fonts/banco/Banco Regular.woff') format('woff');
+}
