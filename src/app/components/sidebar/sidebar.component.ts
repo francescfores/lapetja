@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, HostListener} from "@angular/core";
+import {Component, Input, OnInit, HostListener,AfterViewInit} from "@angular/core";
 import {SidebarService} from"./services/sidebar.service";
 import {ThemeService} from "./../../services/theme/theme.service";
 import {first} from "rxjs/operators";
@@ -17,7 +17,7 @@ import $ from 'jquery';
     providers: [SidebarService], // Registra aquí el servicio
 
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent implements OnInit,AfterViewInit {
   sidebarOpen= false;
   isDarkEnable=false;
   loginOpen = false;
@@ -36,7 +36,9 @@ export class SidebarComponent implements OnInit {
     this.sidebarOpen= false;
   }
   show_nav!:boolean;
-
+  ngAfterViewInit(){
+          this.detectScrollDirection();
+  }
   ngOnInit() {
     this.transparent=false;
       this.show_nav = true;
@@ -81,8 +83,13 @@ export class SidebarComponent implements OnInit {
     this.themeService.changeTheme(this.isDarkEnable);
   }
   animationSunMoon(){
+    var scrollDistance = document.documentElement.scrollTop;
+    console.log(document.documentElement.scrollTop)
     if(!this.isDarkEnable){
+    if (scrollDistance > 0) {
       $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
+    }
+
       $('.moon_sun g circle').css("transform", "scale(1)");
       // $('.moon_sun').css("transform", "rotate(-20deg)");
       setTimeout(function() {
@@ -95,7 +102,9 @@ export class SidebarComponent implements OnInit {
       $('.moon_sun circle').css("background", "green");
       $('.moon_sun > circle').attr("r", "5");
     }else{
+          if (scrollDistance > 0) {
       $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
+    }
       $('.moon_sun g circle').css("transform", "scale(0)");
       $('.moon_sun').css("transform", "rotate(90deg)");
       $('#moon-mask-main-nav circle').attr('cx', '10');
@@ -120,17 +129,41 @@ export class SidebarComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {
     if(!this.sidebarOpen){
-      this.detectScrollDirection()
+      this.detectScrollDirection();
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition === 0) {
+      $('#navbar').addClass('transparent');
+    } else {
+      $('#navbar').addClass('transparent');
     }
+    }
+
   }
 
   scroll = (): void => {
 
   }
+
+  scrollDistance=0;
   detectScrollDirection() {
     var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     var scrollDistance = document.documentElement.scrollTop;
+    console.log(document.documentElement.scrollTop)
+    this.scrollDistance=scrollDistance;
+    if (scrollDistance === 0) {
+      $('.moon_sun').css("fill", "#fff");
+      $('.logo').css("fill", "#fff");
+      $('#navbar').addClass('bg-transparent');
+      $('#navbar').addClass('text-white');
+      $('#logo').addClass('fill-white');
+    }else{
+      $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
+      $('#navbar').removeClass('bg-transparent');
+      $('#navbar').removeClass('text-white');
+      $('#logo').removeClass('fill-white');
+      $('.logo').css("fill", "hsl(var(--twc-textPrimary))");
 
+    }
     if (currentScrollPosition > this.lastScrollPosition && scrollDistance > 0) {
       $('#navbar').addClass('-translate-y-16');
     }

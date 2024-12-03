@@ -1,5 +1,5 @@
 <nav id="navbar" *ngIf="show_nav"
-     class="bg-bgPrim text-textPrimary transition-all duration-500 ease-in-out top-0 fixed z-50 w-full">
+     class=" bg-bgPrim text-textPrimary transition-all duration-500 ease-in-out top-0 fixed z-50 w-full">
   <div class="container mx-auto ">
     <div class="flex-grow  flex h-16">
       <button
@@ -22,10 +22,10 @@
       </button>
       <div class="flex m-auto md:ml-0 md:mr-auto md:my-auto justify-center items-center ">
         <a [routerLink]="['/blog']">
-          <!-- <img *ngIf="isDarkEnable" class="w-6" src="./assets/img/logo/thunder_logo_dark.png" >
-          <img *ngIf="!isDarkEnable" class="w-6" src="./assets/img/logo/thunder_logo.png" >
-          -->
-          <svg class="w-6 h-6 fill-textPrimary" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Angular</title><path d="M16.712 17.711H7.288l-1.204 2.916L12 24l5.916-3.373-1.204-2.916ZM14.692 0l7.832 16.855.814-12.856L14.692 0ZM9.308 0 .662 3.999l.814 12.856L9.308 0Zm-.405 13.93h6.198L12 6.396 8.903 13.93Z"/></svg>
+           <img *ngIf="!isDarkEnable && scrollDistance!==0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-negre-transparent-pastilla (1).png" >
+          <img *ngIf="isDarkEnable && scrollDistance!==0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
+          <img *ngIf="scrollDistance===0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
+        
         </a>  
       </div>
       <div class="relative text-sm hidden md:flex font-bold flex flex-grow
@@ -36,7 +36,7 @@
         </div>
       <div class="flex  items-center gap-x-10">
         
-        <svg class="hover:opacity-70 moon_sun" *ngIf="!dark"(click)="changeTheme()" width="24" height="24" viewBox="0 0 18 18" style="transform: rotate(90deg); fill: hsl(var(--twc-textPrimary));"><mask _ngcontent-ng-c2922281312="" id="moon-mask-main-nav"><rect _ngcontent-ng-c2922281312="" x="0" y="0" width="18" height="18" fill="#FFF"></rect><circle _ngcontent-ng-c2922281312="" cx="25" cy="0" r="8" fill="black" style="background: green;"></circle></mask><circle _ngcontent-ng-c2922281312="" id="circle" cx="9" cy="9" fill="var(--color-text)" mask="url(#moon-mask-main-nav)" r="5" style="background: green;"></circle><g _ngcontent-ng-c2922281312="" _ngcontent-mfi-c41=""><circle _ngcontent-ng-c2922281312="" cx="17" cy="9" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="13" cy="15.928203" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="5" cy="15.928203" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="1" cy="9" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="5" cy="2.071797" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="13" cy="2.071797" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle></g></svg>
+        <svg class="hover:opacity-70 moon_sun" *ngIf="!dark"(click)="changeTheme()" width="24" height="24" viewBox="0 0 18 18" style="transform: rotate(90deg); "><mask _ngcontent-ng-c2922281312="" id="moon-mask-main-nav"><rect _ngcontent-ng-c2922281312="" x="0" y="0" width="18" height="18" fill="#FFF"></rect><circle _ngcontent-ng-c2922281312="" cx="25" cy="0" r="8" fill="black" style="background: green;"></circle></mask><circle _ngcontent-ng-c2922281312="" id="circle" cx="9" cy="9" fill="var(--color-text)" mask="url(#moon-mask-main-nav)" r="5" style="background: green;"></circle><g _ngcontent-ng-c2922281312="" _ngcontent-mfi-c41=""><circle _ngcontent-ng-c2922281312="" cx="17" cy="9" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="13" cy="15.928203" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="5" cy="15.928203" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="1" cy="9" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="5" cy="2.071797" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle><circle _ngcontent-ng-c2922281312="" cx="13" cy="2.071797" r="1.5" fill="var(--color-text)" style="transform-origin: center center 0px; transform: scale(1); background: green;"></circle></g></svg>
         <svg class="hover:opacity-70 moon_sun" *ngIf="dark" (click)="changeTheme()"  width="24" height="24" viewBox="0 0 18 18" style="transform: rotate(50deg); fill: white;">
           <mask  id="moon-mask-main-nav">
             <rect x="0" y="0" width="18" height="18" fill="#FFF"></rect>

@@ -18,6 +18,11 @@ import { GoogleMapsModule } from '@angular/google-maps';
 
 })
 export class HomeComponent implements AfterViewInit {
+
+  @ViewChild('element', { static: true }) element!: ElementRef;
+  multiple = 10;
+
+  
     constructor(
     private el: ElementRef, private renderer: Renderer2,
     public themeService: ThemeService,
@@ -72,6 +77,33 @@ export class HomeComponent implements AfterViewInit {
   lastMoveX = 0;
   velocity = 0;
   
+  @HostListener('mousemove', ['$event'])
+  onMouseMove(event: MouseEvent): void {
+    window.requestAnimationFrame(() => {
+      this.transformElement(event.clientX, event.clientY);
+    });
+  }
+
+  @HostListener('mouseleave', ['$event'])
+  onMouseLeave(): void {
+    window.requestAnimationFrame(() => {
+      this.renderer.setStyle(this.element.nativeElement, 'transform', 'rotateX(0) rotateY(0)');
+    });
+  }
+
+ transformElement(x: number, y: number): void {
+    const box = this.element.nativeElement.getBoundingClientRect();
+    const calcX = -(y - box.y - box.height / 2) / this.multiple;
+    const calcY = (x - box.x - box.width / 2) / this.multiple;
+    const percentage = parseInt(((x - box.x) / box.width * 1000).toString(), 10) / 10;
+
+    this.renderer.setStyle(
+      this.element.nativeElement,
+      'transform',
+      `rotateX(${calcX}deg) rotateY(${calcY}deg)`
+    );
+
+  }
 
   ngAfterViewInit() {
 
