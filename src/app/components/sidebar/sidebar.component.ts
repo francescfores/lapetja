@@ -37,7 +37,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
   }
   show_nav!:boolean;
   ngAfterViewInit(){
-          this.detectScrollDirection();
+          //this.detectScrollDirection();
   }
   ngOnInit() {
     this.transparent=false;
@@ -128,14 +128,14 @@ export class SidebarComponent implements OnInit,AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {
-    if(!this.sidebarOpen){
+    //if(!this.sidebarOpen){
       this.detectScrollDirection();
       const scrollPosition = window.scrollY || document.documentElement.scrollTop;
       if (scrollPosition === 0) {
       $('#navbar').addClass('transparent');
-    } else {
-      $('#navbar').addClass('transparent');
-    }
+    //} else {
+  //    $('#navbar').addClass('transparent');
+  //  }
     }
 
   }

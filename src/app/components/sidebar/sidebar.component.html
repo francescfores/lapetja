@@ -1,6 +1,6 @@
 <nav id="navbar" *ngIf="show_nav"
      class=" bg-bgPrim text-textPrimary transition-all duration-500 ease-in-out top-0 fixed z-50 w-full">
-  <div class="container mx-auto ">
+  <div [ngClass]="{ 'overflow-y-hidden': sidebarOpen}" class="container mx-auto ">
     <div class="flex-grow  flex h-16">
       <button
         class='flex md:hidden z-50 flex-grow-0 flex-shrink-0 my-auto
@@ -22,16 +22,17 @@
       </button>
       <div class="flex m-auto md:ml-0 md:mr-auto md:my-auto justify-center items-center ">
         <a [routerLink]="['/blog']">
-           <img *ngIf="!isDarkEnable && scrollDistance!==0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-negre-transparent-pastilla (1).png" >
-          <img *ngIf="isDarkEnable && scrollDistance!==0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
-          <img *ngIf="scrollDistance===0" class="w-10" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
+          <img *ngIf="!isDarkEnable && scrollDistance!==0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-negre-transparent-pastilla (1).png" >
+          <img *ngIf="isDarkEnable && scrollDistance!==0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
+          <img *ngIf="scrollDistance===0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
         
         </a>  
       </div>
       <div class="relative text-sm hidden md:flex font-bold flex flex-grow
          justify-center items-center gap-10 ">
-          <a href="#projects"><p>Proyectos</p></a>
-          <a href="#about"><p>Acerca de mí</p></a>
+          <a href="#about"><p>Nosotros</p></a>
+          <a href="#activities"><p>Actividades</p></a>
+          <a href="#gallery"><p>Galería</p></a>
           <a href="#contact"><p>Contacto</p></a>
         </div>
       <div class="flex  items-center gap-x-10">
@@ -58,20 +59,19 @@
   </div>
 </nav>
 <div
-  [ngClass]="{ 'w-64 px-5': sidebarOpen, 'w-0': !sidebarOpen  }"
+  [ngClass]="{ 'w-full px-5': sidebarOpen, 'w-0': !sidebarOpen  }"
   class=" md:hidden flex-grow-0 flex-shrink-0 left-0  bg-bgPrim text-textPrimary
-       px-0 z-40 pt-16
+       px-0 z-40 pt-16 opacity-95
         duration-500 transition-all
-       h-full gap-12  fixed overflow-y-auto scrollbar-corner-bgPrim overflow-hidden sm:overflow-x-hidden pb-2
+       h-screen gap-12  fixed overflow-y-auto scrollbar-corner-bgPrim overflow-hidden sm:overflow-x-hidden pb-2
       ">
-  <div class="relative text-xl flex flex-col font-bold flex flex-grow
-         justify-center items-center gap-8 text-left pt-4">
+  <div class="relative flex flex-col font-bold flex flex-grow
+         justify-center items-center gap-12 text-left pt-20 text-2xl">
     <!--           <a [routerLink]="['/blog']"><p>Latest</p></a> -->
-    <div class="group mr-auto" [routerLink]="['/projects']" (click)="toggleSidebar()">
-      <p class="" >Proyectos</p>
-    </div>
-    <a class="mr-auto"  [routerLink]="['/about']"><p>Acerca de mí</p></a>
-    <a  class="mr-auto"  [routerLink]="['/contact']"><p>Contacto</p></a>
+          <a href="#about"><p>Nosotros</p></a>
+          <a href="#activities"><p>Actividades</p></a>
+          <a href="#gallery"><p>Galería</p></a>
+          <a href="#contact"><p>Contacto</p></a>
   </div>
 
 </div>
