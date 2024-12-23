@@ -64,7 +64,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
 
       });
     this.detectScrollDirection();
-      
+
   }
 
   toggleSidebar() {
@@ -175,10 +175,13 @@ export class SidebarComponent implements OnInit,AfterViewInit {
     this.lastScrollPosition = currentScrollPosition;
   }
 
-
-  goToLandings() {
-    const route = ['/blog/bonus/landings'];
-    this.router.navigate(route);
-
-  }
+  closeSidebarAndScroll() {
+  this.sidebarOpen = false;
+  setTimeout(() => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 0);  // Asegúrate de que la navegación se ejecute después de cerrar la sidebar
+}
 }

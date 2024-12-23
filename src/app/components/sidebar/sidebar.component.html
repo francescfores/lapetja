@@ -25,7 +25,6 @@
           <img *ngIf="!isDarkEnable && scrollDistance!==0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-negre-transparent-pastilla (1).png" >
           <img *ngIf="isDarkEnable && scrollDistance!==0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
           <img *ngIf="scrollDistance===0" class="w-14 hover:rotate-[360deg] transition-transform duration-500" src="./assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla (2).svg" >
-        
         </a>  
       </div>
       <div class="relative text-sm hidden md:flex font-bold flex flex-grow
@@ -68,10 +67,10 @@
   <div class="relative flex flex-col font-bold flex flex-grow
          justify-center items-center gap-12 text-left pt-20 text-2xl">
     <!--           <a [routerLink]="['/blog']"><p>Latest</p></a> -->
-          <a href="#about"><p>Nosotros</p></a>
-          <a href="#activities"><p>Actividades</p></a>
-          <a href="#gallery"><p>Galería</p></a>
-          <a href="#contact"><p>Contacto</p></a>
+          <a href="#about" (click)="closeSidebarAndScroll()"><p>Nosotros</p></a>
+          <a href="#activities" (click)="closeSidebarAndScroll()"><p>Actividades</p></a>
+          <a href="#gallery" (click)="closeSidebarAndScroll()"><p>Galería</p></a>
+          <a href="#contact" (click)="closeSidebarAndScroll()"><p>Contacto</p></a>
   </div>
 
 </div>
