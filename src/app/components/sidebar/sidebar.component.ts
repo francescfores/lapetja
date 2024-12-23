@@ -175,10 +175,10 @@ export class SidebarComponent implements OnInit,AfterViewInit {
     this.lastScrollPosition = currentScrollPosition;
   }
 
-  closeSidebarAndScroll() {
+  closeSidebarAndScroll(anchor:any) {
   this.sidebarOpen = false;
   setTimeout(() => {
-    const element = document.getElementById('about');
+    const element = document.getElementById(anchor);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
