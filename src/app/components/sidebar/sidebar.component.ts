@@ -37,7 +37,6 @@ export class SidebarComponent implements OnInit,AfterViewInit {
   }
   show_nav!:boolean;
   ngAfterViewInit(){
-          //this.detectScrollDirection();
   }
   ngOnInit() {
     this.transparent=false;
@@ -54,16 +53,18 @@ export class SidebarComponent implements OnInit,AfterViewInit {
     });
     this.dark=this.isDarkEnable
 
-    console.log(this.isDarkEnable)
+    //console.log(this.isDarkEnable)
 
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
         // Aquí puedes manejar el evento de navegación
-        console.log('Navegación a:', event.url);
+        //console.log('Navegación a:', event.url);
         $('#navbar').removeClass('-translate-y-16');
 
       });
+    this.detectScrollDirection();
+      
   }
 
   toggleSidebar() {
@@ -84,7 +85,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
   }
   animationSunMoon(){
     var scrollDistance = document.documentElement.scrollTop;
-    console.log(document.documentElement.scrollTop)
+    //console.log(document.documentElement.scrollTop)
     if(!this.isDarkEnable){
     if (scrollDistance > 0) {
       $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
@@ -148,7 +149,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
   detectScrollDirection() {
     var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     var scrollDistance = document.documentElement.scrollTop;
-    console.log(document.documentElement.scrollTop)
+    //console.log(document.documentElement.scrollTop)
     this.scrollDistance=scrollDistance;
     if (scrollDistance === 0) {
       $('.moon_sun').css("fill", "#fff");
